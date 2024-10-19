@@ -35,6 +35,40 @@
         </div>
     </header>
 
+    <div class="mobile-navigation" aria-label="mobile navigation">
+        <label for="toggler-id" aria-label="open-close mobile navigation menu">
+            <svg width="33" height="20" viewBox="0 0 33 20" class="mobile-navigation-burger" aria-label="burger icon">
+                <use href="assets/sprite.svg#burger-icon"></use>
+            </svg>
+        </label>
+        <input type="checkbox" id="toggler-id" class="mobile-navigation-toggler">
+            <nav class="mobile-navigation-menu" aria-label="mob header navigation">
+                <ul class="mobile-navigation-list" aria-label="mob header navigation list">
+                    <li>
+                        <a href="#home-id" class="mobile-navigation-link" aria-label="link to home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about-id" class="mobile-navigation-link" aria-label="link to About">About</a>
+                    </li>
+                    <li>
+                        <a href="#history-id" class="mobile-navigation-link" aria-label="link to History">History</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio-id" class="mobile-navigation-link" aria-label="link to Portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contacts-id" class="mobile-navigation-link" aria-label="link to Contacts">Contacts</a>
+                    </li>
+                </ul>
+                    <label for="toggler-id" class="mobile-navigation-close" aria-label="open-close mobile navigation menu">
+                        <svg width="33" height="20" viewBox="0 0 33 20" class="mobile-navigation-cross" aria-label="cross icon">
+                            <use href="assets/sprite.svg#cross-icon"></use>
+                        </svg>
+                    </label>
+            </nav>
+
+    </div>
+
     <main aria-label="main">
         <section class="home" aria-label="home section" id="home-id">
             <div class="container">
@@ -56,7 +90,7 @@
                 <p class="about-description-ru" aria-label="description ru">
                     Будучи художником с мировой известностью, Иван Константинович Айвазовский предпочитал жить и работать на своей родине — в Крыму. Айвазовский наиболее известен своими морскими пейзажами, которые составляют больше половины его работ. Художник считается одним из величайших маринистов всех времён.
                 </p>
-                <hr class="divider" arial-label="divider">
+                <hr class="divider" aria-label="divider">
 
                 <h3 class="about-subtitle-en" aria-label="about subtitle en">
                     Ivan Konstantinovich Aivazovsky - Russian marine painter of Armenian origin, collector, philanthropist.
@@ -76,7 +110,7 @@
         <section class="portfolio-section" id="portfolio-id" aria-label="portfolio section">
             <div class="container">
                 <h2 class="portfolio-title">Portfolio</h2>
-                <img src="assets/webp/portfolio 1.webp" alt="Winter wagon train on the way" class="portfolio-picture">
+                <img src="assets/webp/portfolio1.webp" alt="Winter wagon train on the way" class="portfolio-picture">
                 <p class="portfolio-description" aria-label="description picture 1">Зимний обоз в пути, 1857 г. | Winter wagon train on the way, 1857 </p>
                 <img src="assets/webp/more.webp" alt="Rainbow" class="portfolio-picture">
                 <p class="portfolio-description" aria-label="description picture 2">Радуга, 1873 г. | Rainbow, 1873</p>
@@ -91,9 +125,9 @@
     <footer class="Contacts" aria-label="contacts section" id="contacts-id">
         <div class="container">
             <h2 class="contacts-title">Contacts</h2>
-            <button class="contacts-button">
+            <div class="contacts-button">
                 <a href="https://ayvazovskiy.su" class="button-link">ayvazovskiy.su</a>
-            </button>
+            </div>
             <address class="socials" aria-label="social icons">
                 <a href="https://youtube.com" target="_blank" aria-label="link to youtube">
                     <svg viewBox="0 0 156 156" class="social-icon" aria-label="youtube icon">
